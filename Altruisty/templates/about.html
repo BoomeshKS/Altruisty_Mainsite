@@ -1,0 +1,857 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from crowdytheme.com/html/Altruisty/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 02:02:12 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Altruisty HTML5 Template">
+
+    <title>Altruisty About</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/imgs/logo/favicon.jpg' %}">
+
+
+
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/master-about.css' %}">
+
+
+</head>
+
+
+<body class="font-heading-beatricetrial-regular-2">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="container" class="container-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text="A" class="characters">A</span>
+                    <span data-text="R" class="characters">L</span>
+                    <span data-text="O" class="characters">T</span>
+                    <span data-text="L" class="characters">R</span>
+                    <span data-text="A" class="characters">U</span>
+                    <span data-text="X" class="characters">i</span>
+                    <span data-text="X" class="characters">S</span>
+                    <span data-text="X" class="characters">T</span>
+                    <span data-text="X" class="characters">Y</span>
+                </div>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+    <!-- Sroll to top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+
+    <!-- Switcher Area Start -->
+    
+    <!-- Switcher Area End -->
+    <!-- offcanvas start  -->
+    <div class="offcanvas-3__area">
+        <div class="offcanvas-3__inner">
+            <div class="offcanvas-3__meta-wrapper">
+                <div class="">
+                    <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="">
+                    <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+                        <ul>
+                            <li><a href="tel:+2-352698102" class="unnerline"><u>+2-352 698 102</u></a></li>
+                            <li><a href="mailto:contact@me.com">contact@me.com</a></li>
+                            <li>
+                                <a href="#">
+                                    27 Division St, <br>
+                                    New York, NY 10002, USA
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-3__social d-none d-md-block">
+                        <p class="title">Follow Me</p>
+                        <div class="offcanvas-3__social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-3__menu-wrapper">
+                <nav class="nav-menu offcanvas-3__menu">
+                    <ul>
+                        <li><a href="{% url 'altruisty:index' %}">home</a></li>
+                        <li><a href="{% url 'altruisty:about' %}">about</a></li>
+                        <li><a href="{% url 'altruisty:services' %}">services</a></li>
+                        <li><a href="{% url 'altruisty:E-learning' %}">E-learning registration</a></li>
+                        <li><a href="{% url 'altruisty:Mentorform' %}">Mentor registration</a></li>
+                        <li><a href="{% url 'altruisty:Startupform' %}">Startup registration</a></li>
+                        <li><a href="{% url 'altruisty:intern' %}">Internship</a></li>
+                        <li><a href="{% url 'altruisty:verify' %}">View internship</a></li>
+                        <li><a href="{% url 'altruisty:contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end  -->
+    <!-- search modal start -->
+    <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="search-template" aria-hidden="true">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="#" class="form-search">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search modal end -->
+    <!-- Header area start -->
+    <header class="header-area">
+        <div class="container large">
+            <div class="header-area__inner">
+                <div class="header__logo">
+                    <a href="#">
+                        <img class="show-light" src="{% static 'assets/imgs/logo/logo.png' %}" alt="Site Logo">
+
+                    </a>
+                </div>
+                <div class="header__nav pos-center">
+                    <nav class="main-menu">
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="{% url 'altruisty:index' %}">Home</a>
+
+                            </li>
+                            <li><a href="{% url 'altruisty:about' %}">About</a></li>
+                            <!--  <li class="menu-item-has-children">
+          <a href="#">portfolio</a>
+          <ul class="dp-menu">
+              <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
+              <li><a href="portfolio-material.html">Portfolio Material</a></li>
+              <li><a href="portfolio-slicer.html">Portfolio Slicer</a></li>
+              <li><a href="portfolio-spring.html">Portfolio Spring</a></li>
+          </ul>
+      </li>-->
+                            <li>
+                                <a href="{% url 'altruisty:services' %}">Services</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Registration</a>
+                                <ul class="dp-menu">
+                                    <li><a href="{% url 'altruisty:E-learning' %}">E-learning Platform Registration</a></li>
+                                    <li><a href="{% url 'altruisty:Mentorform' %}">Mentor Registration</a></li>
+                                    <li><a href="{% url 'altruisty:Startupform' %}">Startup Registration</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Internship</a>
+                                <ul class="dp-menu">
+                                    <li><a href="{% url 'altruisty:intern' %}">Intern Registration</a></li>
+                                    <li><a href="{% url 'altruisty:verify' %}">Verify Internship</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'altruisty:contact' %}">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__button">
+                    <a class="wc-btn wc-btn-primary btn-text-flip" href="contact.html">
+                        <span data-text="get in touch">
+                            get in
+                            touch
+                        </span>
+                    </a>
+                </div>
+                <div class="header__navicon d-xl-none">
+                    <button onclick="showCanvas3()" class="open-offcanvas">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+
+
+
+
+    <div class="has-smooth" id="has_smooth"></div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="body-wrapper body-corporate-agency">
+
+                <!-- overlay switcher close  -->
+                <div class="overlay-switcher-close"></div>
+
+                <main>
+
+                    <!-- hero area start  -->
+                    <section class="hero-area">
+                        <div class="hero-area-inner">
+                            <div class="section-content">
+                                <div class="section-title-wrapper">
+                                    <div class="title-wrapper">
+                                        <h1 class="section-title large has_fade_anim" style="font-size: 55px; margin: 0 30px; text-align: center;">
+                                            We are "Altruisty" - Driven by
+                                            innovation and collaborates agency
+                                            based in teamwork!
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="content-last">
+                                    <div class="subtitle-wrapper has_fade_anim" data-fade-from="right">
+                                        <span class="section-subtitle has-right-line" style="font-size: 18px;">01. about us</span>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="text has_fade_anim" data-fade-from="left" style="font-size: 25px; max-width: 710px;">
+                                            Our development team works: at forefront technology
+                                            "Altruisty" is culture of innovation and collaboration
+                                            we prioritize open communication within the team to our success
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+            </div>
+            </section>
+            <!-- hero area end  -->
+            <!-- counter area start  -->
+            <div class="counter-area">
+                <div class="counter-area-inner">
+                    <div class="thumb">
+                        <img src="{% static 'assets/about-img/Finance-Icons.JPG' %}" alt="image">
+                    </div>
+                    <div class="counter-wrapper-box">
+                        <div class="counter-wrapper">
+                            <div class="thumb overflow-hidden">
+                                <img src="{% static 'assets/about-img/bg-3.jpg' %}" data-speed="0.9" alt="image">
+                            </div>
+                            <div class="counter-box">
+                                <h2 class="text has_fade_anim">
+                                    We have 100+ <br>
+                                    satisfied clients
+                                </h2>
+                                <h2 class="number wc-counter has_fade_anim">100+</h2>
+                            </div>
+                            <div class="counter-box dark">
+                                <h2 class="text has_fade_anim">
+                                    We helped to get <br>
+                                    companies with $25M+ <br>
+                                    funding
+                                </h2>
+                                <h2 class="number wc-counter has_fade_anim">25M+</h2>
+                            </div>
+                            <div class="thumb overflow-hidden">
+                                <img src="{% static 'assets/about-img/bg-2.jpg' %}" style="height: 300px;" data-speed="0.9" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- counter area end  -->
+            <!-- awards area start  -->
+            <section class="awards-area">
+                <div class="container">
+                    <div class="awards-area-inner section-spacing">
+                        <div class="section-header">
+                            <div class="section-title-wrapper">
+                                <div class="subtitle-wrapper">
+                                    <span class="section-subtitle has-left-line" style="font-size: 25px;">02. Who we are</span>
+                                </div>
+                                <div class="title-wrapper">
+                                    <h2 class="section-title has_fade_ani" style="font-size: 40px; width: 1050px; margin-bottom: 50px;">
+                                        We are Altruisty  collective of innovators passionate about pushing boundaries
+                                        agency!
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div class="text-wrapper">
+                                <p class="text-p1">
+                                    We deploy world-class creative design, team on
+                                    demand. that can design surest
+                                    measure's of success is when a client partner with more than once
+                                    build, ship scale your vision most efficient.
+                                </p>
+                            </div>
+                            <div class="awards-list has_fade_anim">
+                                <ul>
+                                    <li>
+                                        <div class="meta">
+                                            <div class="icon">
+                                                <img class="show-light" src="{% static 'assets/imgs/icon/icon-s-40.webp' %}" alt="icon">
+                                                <img class="show-dark" src="{% static 'assets/imgs/icon/icon-s-40-light.webp' %}" alt="icon">
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="number wc-counter">50+</h3>
+                                                <p class="text">
+                                                    projects success
+                                                    rate 99%
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="meta">
+                                            <div class="icon">
+                                                <img class="show-light" src="{% static 'assets/imgs/icon/icon-s-41.webp' %}" alt="icon">
+                                                <img class="show-dark" src="{% static 'assets/imgs/icon/icon-s-41-light.webp' %}" alt="icon">
+                                            </div>
+                                            <div class="content">
+                                                <h3 class="number wc-counter">12+</h3>
+                                                <p class="text">
+                                                    award for digital
+                                                    innovation
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </section>
+            <!-- awards area end  -->
+            <!-- about area start  -->
+            <section class="about-area container-hd">
+                <div class="about-area-inner">
+                    <div class="thumb">
+                        <img src="{% static 'assets/about-img/bg-img.jpg' %}" alt="gallery image">
+                    </div>
+                    <div class="section-content">
+                        <div class="bg">
+                            <img src="{% static 'assets/imgs/gallery/img-s-31.webp' %}" alt="image">
+                        </div>
+                        <div class="section-title-wrapper">
+                            <div class="title-wrapper">
+                                <h2 class="section-title has_fade_anim" style="width: 550px; font-size: 45px;">
+                                    We are
+                                    top-level
+                                    expertise.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="text-wrapper">
+                            <p class="text has_fade_anim" data-fade-from="left">
+                                Theme Builder lets you fully personalize the
+                                <span>fixed components</span> of your
+                                website
+                            </p>
+                        </div>
+                        <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                            <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip">
+                                <span data-text="Learn More">
+                                    Learn
+                                    More
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about area end  -->
+            <!-- testimonial area start  -->
+            <div class="testimonial-area has_fade_anim">
+                <div class="container">
+                    <div class="testimonial-area-inner section-spacing">
+                        <div class="testimonial-wrapper-box">
+                            <div class="testimonial-wrapper">
+                                <div class="swiper testimonial-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item">
+                                                <div class="content">
+                                                    <div class="icon">
+                                                        <img class="quote-icon show-light" src="{% static 'assets/imgs/icon/quote-5.webp' %}" alt="Quote Icon">
+                                                        <img class="quote-icon show-dark" src="{% static 'assets/imgs/icon/quote-5-light.webp' %}"
+                                                             alt="Quote Icon">
+                                                    </div>
+                                                    <div class="text-wrapper">
+                                                        <p class="text">When we mention Alts, we&#39 re not referring to just a typical business partner. Instead, they are a team that works alongside us every day, supporting us through challenges and celebrating our victories. Alts is our strongest ally in achieving success!</p>
+                                                    </div>
+                                                    <div class="author">
+                                                        <div class="meta">
+                                                            <span class="name">Altruisty</span>
+                                                            <span class="post">Developer's</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item">
+                                                <div class="content">
+                                                    <div class="icon">
+                                                        <img class="quote-icon show-light" src="{% static 'assets/imgs/icon/quote-5.webp' %}" alt="Quote Icon">
+                                                        <img class="quote-icon show-dark" src="{% static 'assets/imgs/icon/quote-5-light.webp' %}"
+                                                             alt="Quote Icon">
+                                                    </div>
+                                                    <div class="text-wrapper">
+                                                        <p class="text">When we mention Alts, we&#39 re not referring to just a typical business partner. Instead, they are a team that works alongside us every day, supporting us through challenges and celebrating our victories. Alts is our strongest ally in achieving success!</p>
+                                                    </div>
+                                                    <div class="author">
+                                                        <div class="meta">
+                                                            <span class="name">Altruisty,</span>
+                                                            <span class="post">Developer's</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item">
+                                                <div class="content">
+                                                    <div class="icon">
+                                                        <img class="quote-icon show-light" src="assets/imgs/icon/quote-5.webp" alt="Quote Icon">
+                                                        <img class="quote-icon show-dark" src="assets/imgs/icon/quote-5-light.webp"
+                                                             alt="Quote Icon">
+                                                    </div>
+                                                    <div class="text-wrapper">
+                                                        <p class="text">When we mention Alts, we&#39 re not referring to just a typical business partner. Instead, they are a team that works alongside us every day, supporting us through challenges and celebrating our victories. Alts is our strongest ally in achieving success!</p>
+                                                    </div>
+                                                    <div class="author">
+                                                        <div class="meta">
+                                                            <span class="name">Altruisty,</span>
+                                                            <span class="post">Developer&#39 s</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item">
+                                                <div class="content">
+                                                    <div class="icon">
+                                                        <img class="quote-icon show-light" src="{% static 'assets/imgs/icon/quote-5.webp' %}" alt="Quote Icon">
+                                                        <img class="quote-icon show-dark" src="{% static 'assets/imgs/icon/quote-5-light.webp' %}"
+                                                             alt="Quote Icon">
+                                                    </div>
+                                                    <div class="text-wrapper">
+                                                        <p class="text">When we mention Alts, we&#39 re not referring to just a typical business partner. Instead, they are a team that works alongside us every day, supporting us through challenges and celebrating our victories. Alts is our strongest ally in achieving success!</p>
+                                                    </div>
+                                                    <div class="author">
+                                                        <div class="meta">
+                                                            <span class="name">Altruisty,</span>
+                                                            <span class="post">Developer's</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-nav">
+                                <div class="testimonial-button-prev nav-icon">
+                                    <img class="show-light" src="{% static 'assets/imgs/icon/angle-left.webp' %}" alt="icon">
+                                    <img class="show-dark" src="{% static 'assets/imgs/icon/angle-left-light.webp' %}" alt="icon">
+                                </div>
+                                <div class="testimonial-button-next nav-icon">
+                                    <img class="show-light" src="{% static 'assets/imgs/icon/angle-right.webp' %}" alt="icon">
+                                    <img class="show-dark" src="{% static 'assets/imgs/icon/angle-right-light.webp' %}" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- testimonial area end  -->
+            <!-- faq area start  -->
+            <section class="faq-area">
+                <div class="container">
+                    <div class="faq-area-inner section-spacing-bottom">
+                        <div class="section-content">
+                            <div class="thumb">
+                                <img src="{% static 'assets/about-img/bg-1.jpeg' %}" alt="image">
+                                <a href="https://www.youtube.com/watch?v=AzwC6umvd1s"
+                                   class="wc-btn wc-btn-circle video-popup pos-center"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                            <div class="content-last">
+                                <div class="section-title-wrapper">
+                                    <div class="title-wrapper">
+                                        <h2 class="section-title has_fade_anim">
+                                            Working in the
+                                            fields of UI/UX
+                                            design and web
+                                            development
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="accordion-wrapper has_fade_anim">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne">
+                                                    Website & mobile design
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    We deliver world-class creative design through an on-demand team, ensuring success by partnering with clients multiple times to build, launch, and scale.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                        aria-controls="flush-collapseTwo">
+                                                    Motion graphic & animation
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse show"
+                                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    We provide world-class creative design with an on-demand team, where the true measure of success is when a client partners with us repeatedly to build, launch, and scale.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                        aria-controls="flush-collapseThree">
+                                                    User experience
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    We provide world-class creative design with an on-demand team, where the true measure of success is when a client partners with us repeatedly to build, launch, and scale.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- faq area end  -->
+            <!-- team area start  -->
+            <section class="team-area">
+                <div class="container">
+                    <div class="team-area-inner section-spacing">
+                        <div class="section-header">
+                            <div class="section-title-wrapper">
+                                <div class="title-wrapper">
+                                    <h2 class="section-title has_fade_anim">Team Quality</h2>
+                                </div>
+                            </div>
+                            <div class="text-wrapper">
+                                <p class="text has_fade_anim">
+                                    We provide top-tier creative design with an on-demand team that ensures success through repeat partnerships, efficiently building and scaling your vision.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-wrapper-box">
+                            <div class="team-wrapper">
+                                <div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.15">
+                                    <a href="team-details.html">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/about-img/communication.jpeg' %}" alt="team icon">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">Communication</h3>
+                                            <p class="text">Team Communicate</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.30">
+                                    <a href="team-details.html">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/about-img/accounta.png' %}" alt="team icon">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">Accountability</h3>
+                                            <p class="text">Make accountable</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.45">
+                                    <a href="team-details.html">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/about-img/problem.jpg' %}" alt="team icon" style="height: 430px;">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">Problem Solving</h3>
+                                            <p class="text">Find Solution</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.60">
+                                    <a href="team-details.html">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/about-img/129784.jpg' %}" alt="team icon" style="height: 380px;">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="title">Innovation</h3>
+                                            <p class="text">Innovative UX</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- team area end  -->
+            <!-- contact area start  -->
+            <section class="contact-area">
+                <div class="container">
+                    <div class="contact-area-inner section-spacing">
+                        <div class="shape-1">
+                            <img src="{% static 'assets/imgs/shape/img-s-73.webp' %}" alt="shape">
+                        </div>
+                        <div class="section-content">
+                            <div class="section-title-wrapper">
+                                <div class="title-wrapper">
+                                    <h2 class="section-title has_fade_anim">
+                                        Start your experience
+                                        with Altruisty
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper has_fade_anim">
+                                <a href="contact.html" class="wc-btn wc-btn-underline btn-text-flip">
+                                    <span data-text="Let&#39 s get in touch">Let&#39 s get in touch</span> <img src="{% static 'assets/imgs/icon/arrow-right-half-light.webp' %}" alt="icon image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- contact area end  -->
+            <!-- client area start  -->
+            <!-- <div class="client-area">
+              <div class="container">
+                <div class="client-area-inner section-spacing">
+                  <div class="client-area-text">
+                    <h2 class="text has_fade_anim">We worked with largest
+                      global brands</h2>
+                  </div>
+                  <div class="clients-wrapper-box has_fade_anim">
+                    <div class="clients-wrapper">
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-1.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-1-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-2.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-2-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-3.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-3-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-4.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-4-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-5.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-5-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-6.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-6-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-7.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-7-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-8.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-8-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-9.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-9-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-10.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-10-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-11.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-11-light.webp" alt="client image">
+                      </div>
+                      <div class="client-box">
+                        <img class="show-light" src="assets/imgs/brand/img-s-12.webp" alt="client image">
+                        <img class="show-dark" src="assets/imgs/brand/img-s-12-light.webp" alt="client image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- client area end  -->
+            </main>
+
+            <!-- footer area start  -->
+            <footer class="footer-area">
+                <div class="container">
+                    <div class="footer-area-inner section-spacing-top">
+                        <div class="shape-1">
+                            <!-- <img class="show-light" src="assets/imgs/shape/img-s-33.webp" alt="shape">
+                            <img class="show-dark" src="assets/about-img/background.jpg" alt="shape"> -->
+                        </div>
+                        <div class="section-header">
+                            <div class="section-title-wrapper">
+                                <div class="title-wrapper">
+                                    <h2 class="section-title has_fade_anim">
+                                        <span>Get started</span> <br>
+                                        now
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="text-wrapper">
+                                <p class="text has_fade_anim">
+                                    If you would like to work with us or
+                                    just want to get in touch, we&#39 d love
+                                    to hear from you!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-cta">
+                            <div class="footer-widget-wrapper">
+                                <h2 class="title">India</h2>
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        Tamil nadu<br>
+                                        India
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget-wrapper">
+                                <h2 class="title">New York</h2>
+                                <ul class="footer-nav-list">
+                                    <li>
+                                        Nenuya Centre, Elia Street <br>
+                                        New York, USA
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget-wrapper newsletter">
+                                <form action="#" class="subscribe-form">
+                                    <div class="input-field">
+                                        <input type="email" placeholder="Enter your email">
+                                        <button type="submit" class="subscribe-btn">
+                                            <img src="{% static 'assets/imgs/icon/arrow-light.webp' %}"
+                                                 alt="icon">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="copyright-area-inner">
+                            <div class="copyright-text">
+                                <p class="text">
+                                     2024 - 2025 | Alrights reserved <br>
+                                </p>
+                            </div>
+                            <ul class="footer-nav-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer area end  -->
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- All JS files -->
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}" "></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}" "></script>
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}" "></script>
+    <script src="{% static 'assets/js/counter.js' %}" "></script>
+    <script src="{% static 'assets/js/progressbar.js' %}" "></script>
+    <script src="{% static 'assets/js/gsap.min.js' %}" "></script>
+    <script src="{% static 'assets/js/ScrollSmoother.min.js' %}" "></script>
+    <script src="{% static 'assets/js/ScrollToPlugin.min.js' %}" "></script>
+    <script src="{% static 'assets/js/ScrollTrigger.min.js' %}" "></script>
+    <script src="{% static 'assets/js/SplitText.min.js' %}" "></script>
+    <script src="{% static 'assets/js/jquery.meanmenu.min.js' %}" "></script>
+    <script src="{% static 'assets/js/backToTop.js' %}" "></script>
+    <script src="{% static 'assets/js/main.js' %}" "></script>
+    <script src="{% static 'assets/js/error-handling.js' %}" "></script>
+    <script src="{% static 'assets/js/offcanvas.js' %}" "></script>
+
+    <script>
+
+        // testimonial slider
+        if (('.testimonial-slider').length) {
+            var testimonial_slider = new Swiper(".testimonial-slider", {
+                loop: false,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                speed: 1800,
+                watchSlidesProgress: true,
+                navigation: {
+                    prevEl: ".testimonial-button-prev",
+                    nextEl: ".testimonial-button-next",
+                },
+            });
+        }
+
+    </script>
+
+</body>
+
+
+<!-- Mirrored from crowdytheme.com/html/Altruisty/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 02:02:29 GMT -->
+</html>

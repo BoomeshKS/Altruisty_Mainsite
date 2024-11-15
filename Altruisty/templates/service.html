@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arolax HTML5 Template">
+
+    <title>Arolax Services</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/imgs/logo/favicon.png' %}">
+
+
+
+
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/master-services.css' %}">
+
+
+
+
+</head>
+
+
+<body class="font-heading-beatricetrial-regular-2">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="container" class="container-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text="A" class="characters">A</span>
+                    <span data-text="L" class="characters">L</span>
+                    <span data-text="T" class="characters">T</span>
+                    <span data-text="R" class="characters">R</span>
+                    <span data-text="U" class="characters">U</span>
+                    <span data-text="I" class="characters">I</span>
+                    <span data-text="S" class="characters">S</span>
+                    <span data-text="T" class="characters">T</span>
+                    <span data-text="Y" class="characters">Y</span>
+                </div>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+    <!-- Sroll to top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+
+    <!-- Switcher Area Start -->
+   
+    <!-- Switcher Area End -->
+    <!-- offcanvas start  -->
+    <div class="offcanvas-3__area">
+        <div class="offcanvas-3__inner">
+            <div class="offcanvas-3__meta-wrapper">
+                <div class="">
+                    <button id="close_offcanvas" class="close-button close-offcanvas" onclick="hideCanvas3()">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+               
+            </div>
+            <div class="offcanvas-3__menu-wrapper">
+                <nav class="nav-menu offcanvas-3__menu">
+                    <ul>
+                        <li><a href="{% url 'altruisty:index' %}">home</a></li>
+                        <li><a href="{% url 'altruisty:about' %}">about</a></li>
+                        <li><a href="{% url 'altruisty:services' %}">services</a></li>
+                        <li><a href="{% url 'altruisty:E-learning' %}">E-learning registration</a></li>
+                        <li><a href="{% url 'altruisty:Mentorform' %}">Mentor registration</a></li>
+                        <li><a href="{% url 'altruisty:Startupform' %}">Startup registration</a></li>
+                        <li><a href="{% url 'altruisty:intern' %}">Internship</a></li>
+                        <li><a href="{% url 'altruisty:verify' %}">View internship</a></li>
+                        <li><a href="{% url 'altruisty:contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end  -->
+    <!-- search modal start -->
+    <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="search-template" aria-hidden="true">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="#" class="form-search">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search modal end -->
+    <!-- Header area start -->
+    <header class="header-area">
+        <div class="container large">
+            <div class="header-area__inner">
+                <div class="header__logo">
+                    <a href="#">
+                        <img class="show-light" src="{% static 'assets/imgs/logo/logo.png' %}" alt="Site Logo">
+                        <img class="show-dark" src="assets/imgs/logo/logo-light.png" alt="Site Logo">
+                    </a>
+                </div>
+                <div class="header__nav pos-center">
+                    <nav class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="{% url 'altruisty:index' %}">Home</a>
+
+                            </li>
+                            <li><a href="{% url 'altruisty:about' %}">About</a></li>
+                            <!--<li class="menu-item-has-children">
+        <a href="#">portfolio</a>
+        <ul class="dp-menu">
+            <li><a href="portfolio-carousel.html">Portfolio Carousel</a></li>
+            <li><a href="portfolio-material.html">Portfolio Material</a></li>
+            <li><a href="portfolio-slicer.html">Portfolio Slicer</a></li>
+            <li><a href="portfolio-spring.html">Portfolio Spring</a></li>
+        </ul>
+    </li>-->
+                            <li>
+                                <a href="{% url 'altruisty:services' %}">Service</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Registration</a>
+                                <ul class="dp-menu">
+                                    <li><a href="{% url 'altruisty:E-learning' %}">E-learning Platform Registration</a></li>
+                                    <li><a href="{% url 'altruisty:Mentorform' %}">Mentor Registration</a></li>
+                                    <li><a href="{% url 'altruisty:Startupform' %}">Startup Registration</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Internship</a>
+                                <ul class="dp-menu">
+                                    <li><a href="{% url 'altruisty:intern' %}">Internship Registration</a></li>
+                                    <li><a href="{% url 'altruisty:verify' %}">Verify Internship</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'altruisty:contact' %}">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__button">
+                    <a class="wc-btn wc-btn-primary btn-text-flip" href="contact.html">
+                        <span data-text="Get started">
+                            Get
+                            started
+                        </span>
+                    </a>
+                </div>
+                <div class="header__navicon d-xl-none">
+                    <button onclick="showCanvas3()" class="open-offcanvas">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+    <div class="has-smooth" id="has_smooth"></div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="body-wrapper body-corporate-agency">
+
+                <!-- overlay switcher close  -->
+                <div class="overlay-switcher-close"></div>
+
+                <main>
+
+                    <!-- hero area start  -->
+                    <section class="hero-area" style="margin-bottom: 0;">
+                        <div class="container">
+                            <div class="hero-area-inner">
+                                <div class="section-content">
+                                    <div class="section-title-wrapper">
+                                        <div class="title-wrapper">
+                                            <h1 class="section-title has_text_move_anim">Unlock potential through expert-led courses and hands-on internships.</h1>
+                                        </div>
+                                    </div>
+                                    <div class="text-wrapper">
+                                        <p class="text has_fade_anim">
+                                            We provide practical, hands-on experiences that empower learners to apply knowledge in real-world scenarios. Our immersive and adaptive courses cater to individual needs, supported by personalized mentorship and advanced tools. This ensures a smooth transition from learning to career success.
+                                        </p>
+                                    </div>
+                                    <div class="icon has_fade_anim" data-on-scroll="0">
+                                        <img class="show-light" src="{% static 'assets/imgs/shape/img-s-82.webp' %}" alt="image">
+                                        <img class="show-dark" src="{% static 'assets/imgs/shape/img-s-82-light.webp' %}" alt="image">
+                                    </div>
+                                </div>
+                                <div class="thumb">
+                                    <img src="{% static 'assets/imgs/gallery/img-s-86.png' %}" class="has_fade_anim" data-fade-offset="0"
+                                         data-delay="0.45" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- hero area end  -->
+                    <!-- clients area start  -->
+                    {% comment %} <div class="container-hd has_fade_anim">
+                        <div class="clients-area">
+                            <div class="container">
+                                <div class="clients-area-inner">
+                                    <div class="shape-1">
+                                        <img src="assets/imgs/shape/img-s-83.webp" alt="shape">
+                                    </div>
+                                    <div class="client-slider">
+                                        <div class="swiper client-slider-active">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="client-box">
+                                                        <img src="assets/imgs/brand/img-s-1-light.webp" alt="client image">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="client-box">
+                                                        <img src="assets/imgs/brand/img-s-2-light.webp" alt="client image">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="client-box">
+                                                        <img src="assets/imgs/brand/img-s-3-light.webp" alt="client image">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="client-box">
+                                                        <img src="assets/imgs/brand/img-s-4-light.webp" alt="client image">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="client-box">
+                                                        <img src="assets/imgs/brand/img-s-5-light.webp" alt="client image">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="client-box">
+                                                        <img src="assets/imgs/brand/img-s-6-light.webp" alt="client image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- clients area end  --> {% endcomment %}
+
+                    <!-- service area start  -->
+                    <!-- service area start  -->
+                    <section class="service-area section-spacing" style="padding-top: 60px;">
+                        <div class="container">
+                            <div class="service-top-wrapper">
+                                <div class="section-heading">
+                                    <h2 class="section-title has_text_move_anim">Our exclusive services</h2>
+                                </div>
+
+                            </div>
+                            <div class="services-wrapper-box">
+                                <div class="services-grid">
+                                    <div class="service-item has_fade_anim" data-delay="0.15">
+                                        <div class="icon">
+                                            <img class="show-light" src="{% static 'assets/imgs/icon/icon-s-1.webp' %}" alt="service-icon">
+                                            <img class="show-dark" src="{% static 'imgs/icon/icon-s-1-light.webp' %}" alt="service-icon">
+                                        </div>
+                                        <h2 class="title">Digital <br> Marketing</h2>
+                                        <ul class="service-features">
+                                            <li>SEO</li>
+                                            <li>Social Media Marketing</li>
+                                            <li>Content Marketing</li>
+                                            <li>Email Marketing</li>
+                                            <li>PPC</li>
+                                            <li>Affiliate Marketing</li>
+                                            <li>Analytics & Data Insights</li>
+                                        </ul>
+                                    </div>
+                                    <div class="service-item has_fade_anim" data-delay="0.30">
+                                        <div class="icon">
+                                            <img class="show-light" src="{% static 'assets/imgs/icon/icon-s-2.webp' %}" alt="service-icon">
+                                            <img class="show-dark" src="{% static 'imgs/icon/icon-s-2-light.webp' %}" alt="service-icon">
+                                        </div>
+                                        <h2 class="title">Graphic <br> Designing</h2>
+                                        <ul class="service-features">
+                                            <li>Branding</li>
+                                            <li>Typography</li>
+                                            <li>Illustration</li>
+                                            <li>Layout Design</li>
+                                            <li>Color Theory</li>
+                                            <li>Print Design</li>
+                                            <li>Digital Graphics</li>
+                                        </ul>
+                                    </div>
+                                    <div class="service-item has_fade_anim" data-delay="0.45">
+                                        <div class="icon">
+                                            <img class="show-light" src="{% static 'assets/imgs/icon/icon-s-3.webp' %}" alt="service-icon">
+                                            <img class="show-dark" src="{% static 'imgs/icon/icon-s-3-light.webp' %}" alt="service-icon">
+                                        </div>
+                                        <h2 class="title">Web  <br> Development</h2>
+                                        <ul class="service-features">
+                                            <li>Frontend</li>
+                                            <li>Backend</li>
+                                            <li>APIs</li>
+                                            <li>Databases</li>
+                                            <li>Responsive Design</li>
+                                            <li>User Authentication</li>
+                                            <li>Version Control</li>
+                                        </ul>
+                                    </div>
+                                    <div class="service-item has_fade_anim" data-delay="0.60">
+                                        <div class="icon">
+                                            <img class="show-light" src="{% static 'assets/imgs/icon/icon-s-4.webp' %}" alt="service-icon">
+                                            <img class="show-dark" src="{% static 'imgs/icon/icon-s-4-light.webp' %}" alt="service-icon">
+                                        </div>
+                                        <h2 class="title">App <br> Development</h2>
+                                        <ul class="service-features">
+                                            <li>UI Design</li>
+                                            <li>UX Design</li>
+                                            <li>API Integration</li>
+                                            <li>Cross-Platform</li>
+                                            <li>Native Apps</li>
+                                            <li>Testing</li>
+                                            <li>App Deployment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- service area end  -->
+                    <!-- about area start  -->
+                    <section class="about-area container-hd">
+                        <div class="about-area-inner">
+                            <div class="thumb">
+                                <img src="{% static 'assets/imgs/gallery/img-s-1.png' %}" alt="gallery image">
+                            </div>
+                            <div class="section-content">
+                                <div class="bg">
+                                    <img src="{% static 'assets/imgs/gallery/img-s-31.webp' %}" alt="image">
+                                </div>
+                                <div class="section-title-wrapper">
+                                    <div class="title-wrapper">
+                                        <h2 class="section-title has_text_move_anim">We keep it simple while delivering professional-level learning experiences.</h2>
+                                    </div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <p class="text has_fade_anim">As a learner, you have complete control over the <span>core elements</span> of your educational journey.</p>
+
+                                </div>
+                                <div class="btn-wrapper has_fade_anim" data-ease="bounce">
+                                    <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip">
+                                        <span data-text="Learn More">
+                                            Learn
+                                            More
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- about area end  -->
+                    <!-- pricing area start  -->
+                    <section class="pricing-area">
+                        <div class="container">
+                            <div class="pricing-area-inner section-spacing">
+                                <div class="section-header">
+                                    <div class="section-title-wrapper">
+                                        <div class="title-wrapper">
+                                            <h2 class="section-title has_text_move_anim">Our Startup Services</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pricing-wrapper-box">
+                                    <div class="pricing-wrapper" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch;">
+                                        <div class="pricing-box has_fade_anim" data-delay="0.15" style="flex: 0 0 calc(50% - 20px); margin-bottom: 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <span class="price">Idea To Product Development</span>
+                                            <div class="feature-list">
+                                                <h3 class="tag">Transform your innovative ideas into tangible products through structured development processes.</h3>
+                                            </div>
+                                            <a href="{% url 'altruisty:details' heading='Idea To Product Development' %}" class="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+
+                                        <div class="pricing-box has_fade_anim" data-delay="0.30" style="flex: 0 0 calc(50% - 20px); margin-bottom: 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <span class="price">Patent And Copy Rights</span>
+                                            <div class="feature-list">
+                                                <h3 class="tag">Secure your intellectual property rights by obtaining patents and copy rights for your innovations.</h3>
+                                            </div>
+                                            <a href="{% url 'altruisty:details' heading='Patent And Copy Rights' %}" class="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+
+                                        <div class="pricing-box has_fade_anim" data-delay="0.45" style="flex: 0 0 calc(50% - 20px); margin-bottom: 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <span class="price">Company Registration And Other Registration</span>
+                                            <div class="feature-list">
+                                                <h3 class="tag">Register your company and other necessary registrations to establish a legal framework for your business.</h3>
+                                            </div>
+                                            <a href="{% url 'altruisty:details' heading='Company Registration And Other Registration' %}" class="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+
+                                        <div class="pricing-box has_fade_anim" data-delay="0.45" style="flex: 0 0 calc(50% - 20px); margin-bottom: 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <span class="price">Funding Preparation</span>
+                                            <div class="feature-list">
+                                                <h3 class="tag">Prepare for funding rounds by organizing your financials and crafting compelling pitches for investors.</h3>
+                                            </div>
+                                            <a href="{% url 'altruisty:details' heading='Funding Preparation' %}" class="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+
+                                        <div class="pricing-box has_fade_anim" data-delay="0.45" style="flex: 0 0 calc(50% - 20px); margin-bottom: 20px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between; margin: auto;">
+                                            <span class="price">Investor Connect</span>
+                                            <div class="feature-list">
+                                                <h3 class="tag">Connect with potential investors to pitch your business idea and secure funding for growth.</h3>
+                                            </div>
+                                            <a href="{% url 'altruisty:details' heading='Investor Connect' %}" class="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- pricing area end  -->
+                    <!-- contact area start  -->
+                    <section class="contact-area">
+                        <div class="container">
+                            <div class="contact-area-inner section-spacing">
+                                <div class="shape-1">
+                                    <img src="assets/imgs/shape/img-s-73.webp" alt="shape">
+                                </div>
+                                <div class="section-content">
+                                    <div class="section-title-wrapper">
+                                        <div class="title-wrapper">
+                                            <h2 class="section-title has_text_move_anim">
+                                                Start your Journey
+                                                with Altruisty
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrapper has_fade_anim">
+                                        <a href="contact.html" class="wc-btn wc-btn-underline btn-text-flip">
+                                            <span data-text="Let's get in touch">Let's get in touch</span> <img src="{% static 'imgs/icon/arrow-right-half-light.webp' %}" alt="icon image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- contact area end  -->
+                    {% comment %} <!-- client area start  -->
+                    <div class="client-area has_fade_anim">
+                        <div class="container">
+                            <div class="client-area-inner section-spacing">
+                                <div class="client-area-text">
+                                    <h2 class="text">
+                                        We worked with largest
+                                        global brands
+                                    </h2>
+                                </div>
+                                <div class="clients-wrapper-box">
+                                    <div class="clients-wrapper">
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-1.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-1-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-2.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-2-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-3.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-3-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-4.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-4-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-5.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-5-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-6.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-6-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-7.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-7-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-8.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-8-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-9.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-9-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-10.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-10-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-11.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-11-light.webp" alt="client image">
+                                        </div>
+                                        <div class="client-box">
+                                            <img class="show-light" src="assets/imgs/brand/img-s-12.webp" alt="client image">
+                                            <img class="show-dark" src="assets/imgs/brand/img-s-12-light.webp" alt="client image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- client area end  --> {% endcomment %}
+
+                </main>
+
+                <!-- footer area start  -->
+                <footer class="footer-area">
+                    <div class="container">
+                        <div class="footer-area-inner section-spacing-top">
+                            <div class="shape-1">
+                                <img class="show-light" src="assets/imgs/shape/img-s-33.webp" alt="shape">
+                                <img class="show-dark" src="assets/imgs/shape/img-s-33-light.webp" alt="shape">
+                            </div>
+                            <div class="section-header">
+                                <div class="section-title-wrapper">
+                                    <div class="title-wrapper">
+                                        <h2 class="section-title has_text_move_anim">
+                                            <span>Get started</span> <br>
+                                            now
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <p class="text has_fade_anim">
+                                        If you would like to work with us or
+                                        just want to get in touch, we'd love
+                                        to hear from you!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-cta">
+                                <div class="footer-widget-wrapper">
+                                    <h2 class="title">London</h2>
+                                    <ul class="footer-nav-list">
+                                        <li>
+                                            Baltia Squar, Mark Street, <br>
+                                            London
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-widget-wrapper">
+                                    <h2 class="title">New York</h2>
+                                    <ul class="footer-nav-list">
+                                        <li>
+                                            Nenuya Centre, Elia Street <br>
+                                            New York, USA
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-widget-wrapper newsletter">
+                                    <form action="#" class="subscribe-form">
+                                        <div class="input-field">
+                                            <input type="email" placeholder="Enter your email">
+                                            <button type="submit" class="subscribe-btn">
+                                                <img src="assets/imgs/icon/arrow-light.webp"
+                                                     alt="icon">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-area">
+                        <div class="container">
+                            <div class="copyright-area-inner">
+                                <div class="copyright-text">
+                                    <p class="text">
+                                        2022 - 2025 | Alrights reserved <br>
+                                        by <a href="../../../themeforest.net/user/crowdytheme.html" target="_blank">crowdyTheme</a>
+                                    </p>
+                                </div>
+                                <ul class="footer-nav-list">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer area end  -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- All JS files -->
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/counter.js' %}"></script>
+    <script src="{% static 'assets/js/progressbar.js' %}"></script>
+    <script src="{% static 'assets/js/gsap.min.js' %}"></script>
+    <script src="{% static 'assets/js/ScrollSmoother.min.js' %}"></script>
+    <script src="{% static 'assets/js/ScrollToPlugin.min.js' %}"></script>
+    <script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'assets/js/SplitText.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'assets/js/backToTop.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/error-handling.js' %}"></script>
+    <script src="{% static 'assets/js/offcanvas.js' %}"></script>
+
+
+
+    <script>
+
+    // testimonial slider
+    if (('.testimonial-slider').length) {
+      var testimonial_slider = new Swiper(".testimonial-slider", {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 60,
+        speed: 1800,
+        watchSlidesProgress: true,
+        navigation: {
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
+        },
+      });
+    }
+
+
+    // client slider
+    if ('.client-slider-active') {
+      var client_slider_active = new Swiper(".client-slider-active", {
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: true,
+        spaceBetween: 130,
+        speed: 3000,
+        autoplay: {
+          delay: 1,
+        },
+      });
+    }
+
+    </script>
+
+</body>
+
+
+</html>
